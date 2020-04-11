@@ -1,7 +1,12 @@
 import React from 'react';
+import MainBanner from './sections/MainBanner/MainBanner';
 import './App.scss';
 
 function App() {
-  return <div className="App">Hello World!</div>;
+  return (
+    <div>
+      <MainBanner />
+    </div>
+  );
 }
 export default App;
