@@ -1,15 +1,14 @@
 import React from 'react';
-import placeholder from '../../images/emoji.svg';
 
 const ValuesItem = ({ value }) => {
   return (
     <div className="values__list-item">
       <img
         className="values__item-image"
-        alt="value"
-        src={placeholder}
+        alt={value.alt}
+        src={value.image}
       />
-      <h3 className="values__item-heading">{value.title}</h3>
+      <h2 className="values__item-heading">{value.title}</h2>
       <p className="values__item-description">{value.description}</p>
     </div>
   );

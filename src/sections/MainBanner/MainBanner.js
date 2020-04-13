@@ -7,9 +7,9 @@ const MainBanner = () => {
       <h1 className="main-banner__heading">
         Are you ready for another adventure?
       </h1>
-      <h2 className="main-banner__subheading">
+      <h3 className="main-banner__subheading">
         We will make it happen
-      </h2>
+      </h3>
     </section>
   );
 };
