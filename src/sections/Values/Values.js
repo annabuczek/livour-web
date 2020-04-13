@@ -1,6 +1,7 @@
 import React from 'react';
+import ValuesItem from './ValuesItem';
+import values from './valuesCopy';
 import './Values.scss';
-import placeholder from '../../images/emoji.svg';
 
 const Values = () => {
   return (
@@ -15,58 +16,9 @@ const Values = () => {
           lacus suspendisse faucibus interdum.
         </p>
         <div className="values__list">
-          <div className="values__list-item">
-            <img
-              className="values__item-image"
-              alt="value"
-              src={placeholder}
-            />
-            <h3 className="values__item-heading">Best Price</h3>
-            <p className="values__item-description">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit,
-              sed do eiusmod tempor incididunt ut labore et dolore
-              magna aliqua.
-            </p>
-          </div>
-          <div className="values__list-item">
-            <img
-              className="values__item-image"
-              alt="value"
-              src={placeholder}
-            />
-            <h3 className="values__item-heading">Best Price</h3>
-            <p className="values__item-description">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit,
-              sed do eiusmod tempor incididunt ut labore et dolore
-              magna aliqua.
-            </p>
-          </div>
-          <div className="values__list-item">
-            <img
-              className="values__item-image"
-              alt="value"
-              src={placeholder}
-            />
-            <h3 className="values__item-heading">Best Price</h3>
-            <p className="values__item-description">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit,
-              sed do eiusmod tempor incididunt ut labore et dolore
-              magna aliqua.
-            </p>
-          </div>
-          <div className="values__list-item">
-            <img
-              className="values__item-image"
-              alt="value"
-              src={placeholder}
-            />
-            <h3 className="values__item-heading">Best Price</h3>
-            <p className="values__item-description">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit,
-              sed do eiusmod tempor incididunt ut labore et dolore
-              magna aliqua.
-            </p>
-          </div>
+          {values.map((value, index) => (
+            <ValuesItem key={`value-${index}`} value={value} />
+          ))}
         </div>
       </div>
     </section>
