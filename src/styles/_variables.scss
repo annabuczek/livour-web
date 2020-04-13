@@ -3,6 +3,9 @@ $bp-1200: 75em; // 1200px
 $bp-900: 56.25em; // 900px
 $bp-600: 37.5em; // 600px
 
+//SIZES
+$container-width: 118rem; // 1180px;
+
 // FONTS
 $font-family-regular: 'Montserrat', sans-serif;
 $font-family-decorative: 'Permanent Marker', cursive;
@@ -15,6 +18,6 @@ $color-secondary: #542f2a;
 $color-secondary-light: #825953;
 $color-secondary-dark: #2a0800;
 $color-background: #bdc0c1;
-$color-text-light: #fff;
 $color-text: #252e2e;
-$color-text-dark: #000403;
+$color-text-white: #fff;
+$color-text-light: #475757;
