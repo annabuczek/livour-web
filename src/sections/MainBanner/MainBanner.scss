@@ -2,7 +2,7 @@
 
 .main-banner {
   width: 100vw;
-  height: 100vh;
+  height: calc(100vh - 75.7px);
   background-image: url('../../images/main-banner.jpg');
   background-position: center center;
   background-size: cover;
