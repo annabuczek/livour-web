@@ -3,7 +3,7 @@ import FacebookIcon from '../../images/facebook.svg';
 import InstagramIcon from '../../images/instagram.svg';
 import './Navigation.scss';
 
-class Navigation extends Component {
+class NavigationMain extends Component {
   state = {
     show: false,
     scrollPos: 0,
@@ -11,7 +11,6 @@ class Navigation extends Component {
 
   componentDidMount() {
     window.addEventListener('scroll', this.handleScroll);
-    console.log('called!');
   }
 
   handleScroll = () => {
@@ -35,68 +34,68 @@ class Navigation extends Component {
 
   render() {
     return (
-      <nav
-        className={`main-navigation ${
-          this.state.show ? 'main-navigation--active' : ''
-        }`}
-      >
-        <div className="main-navigation__inner">
-          <div className="main-navigation__logo">Livour</div>
-          <ul className="main-navigation__menu">
-            <li className="main-navigation__menu-item">
-              <a href="#about" className="main-navigation__link">
+      <div className="navigation-main">
+        <header
+          className={`navigation__toolbar ${
+            this.state.show ? 'navigation--active' : ''
+          }`}
+        >
+          <div className="navigation__logo">Livour</div>
+          <ul className="navigation-main__menu">
+            <li className="navigation-main__menu-item">
+              <a href="#about" className="navigation-main__link">
                 Home
               </a>
             </li>
-            <li className="main-navigation__menu-item">
-              <a href="#about" className="main-navigation__link">
+            <li className="navigation-main__menu-item">
+              <a href="#about" className="navigation-main__link">
                 Tours
               </a>
             </li>
-            <li className="main-navigation__menu-item">
-              <a href="#about" className="main-navigation__link">
+            <li className="navigation-main__menu-item">
+              <a href="#about" className="navigation-main__link">
                 About
               </a>
             </li>
-            <li className="main-navigation__menu-item">
-              <a href="#about" className="main-navigation__link">
+            <li className="navigation-main__menu-item">
+              <a href="#about" className="navigation-main__link">
                 Reviews
               </a>
             </li>
-            <li className="main-navigation__menu-item">
-              <a href="#about" className="main-navigation__link">
+            <li className="navigation-main__menu-item">
+              <a href="#about" className="navigation-main__link">
                 Contact
               </a>
             </li>
-            <li className="main-navigation__menu-item">
+            <li className="navigation-main__menu-item">
               <a
                 href="https://facebook.com"
-                className="main-navigation__link"
+                className="navigation-main__link"
               >
                 <img
                   src={FacebookIcon}
                   alt="facebook"
-                  className="main-navigation__social-icon"
+                  className="navigation-main__social-icon"
                 />
               </a>
             </li>
-            <li className="main-navigation__menu-item">
+            <li className="navigation-main__menu-item">
               <a
                 href="https://instagram.com"
-                className="main-navigation__link"
+                className="navigation-main__link"
               >
                 <img
                   src={InstagramIcon}
                   alt="instagram"
-                  className="main-navigation__social-icon"
+                  className="navigation-main__social-icon"
                 />
               </a>
             </li>
           </ul>
-        </div>
-      </nav>
+        </header>
+      </div>
     );
   }
 }
 
-export default Navigation;
+export default NavigationMain;
