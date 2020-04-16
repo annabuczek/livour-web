@@ -34,12 +34,12 @@ class NavigationMain extends Component {
 
   render() {
     return (
-      <div className="navigation-main">
-        <header
-          className={`navigation__toolbar ${
-            this.state.show ? 'navigation--active' : ''
-          }`}
-        >
+      <div
+        className={`navigation-main ${
+          this.state.show ? 'navigation--active' : ''
+        }`}
+      >
+        <header className="navigation__toolbar">
           <div className="navigation__logo">Livour</div>
           <ul className="navigation-main__menu">
             <li className="navigation-main__menu-item">

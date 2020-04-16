@@ -1,13 +1,15 @@
 import React from 'react';
 import MainBanner from './sections/MainBanner/MainBanner';
-import Navigation from './sections/Navigation/Navigation';
+import NavigationMain from './sections/Navigation/NavigationMain';
+import NavigationMobile from './sections/Navigation/NavigationMobile';
 import Values from './sections/Values/Values';
 import './App.scss';
 
 function App() {
   return (
     <div>
-      <Navigation />
+      <NavigationMain />
+      <NavigationMobile />
       <MainBanner />
       <Values />
     </div>
