@@ -43,39 +43,39 @@ class NavigationMain extends Component {
           <div className="navigation__logo">Livour</div>
           <ul className="navigation-main__menu">
             <li className="navigation-main__menu-item">
-              <a href="#about" className="navigation-main__link">
+              <a href="#about" className="navigation__link">
                 Home
               </a>
             </li>
             <li className="navigation-main__menu-item">
-              <a href="#about" className="navigation-main__link">
+              <a href="#about" className="navigation__link">
                 Tours
               </a>
             </li>
             <li className="navigation-main__menu-item">
-              <a href="#about" className="navigation-main__link">
+              <a href="#about" className="navigation__link">
                 About
               </a>
             </li>
             <li className="navigation-main__menu-item">
-              <a href="#about" className="navigation-main__link">
+              <a href="#about" className="navigation__link">
                 Reviews
               </a>
             </li>
             <li className="navigation-main__menu-item">
-              <a href="#about" className="navigation-main__link">
+              <a href="#about" className="navigation__link">
                 Contact
               </a>
             </li>
             <li className="navigation-main__menu-item">
               <a
                 href="https://facebook.com"
-                className="navigation-main__link"
+                className="navigation__link"
               >
                 <img
                   src={FacebookIcon}
                   alt="facebook"
-                  className="navigation-main__social-icon"
+                  className="navigation__social-icon"
                 />
               </a>
             </li>
@@ -87,7 +87,7 @@ class NavigationMain extends Component {
                 <img
                   src={InstagramIcon}
                   alt="instagram"
-                  className="navigation-main__social-icon"
+                  className="navigation__social-icon"
                 />
               </a>
             </li>
