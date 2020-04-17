@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
-import FacebookIcon from '../../images/facebook.svg';
-import InstagramIcon from '../../images/instagram.svg';
+import NavigationMenu from './NavigationMenu';
 import './Navigation.scss';
 
 class NavigationMain extends Component {
@@ -41,57 +40,7 @@ class NavigationMain extends Component {
       >
         <header className="navigation__toolbar">
           <div className="navigation__logo">Livour</div>
-          <ul className="navigation-main__menu">
-            <li className="navigation-main__menu-item">
-              <a href="#about" className="navigation__link">
-                Home
-              </a>
-            </li>
-            <li className="navigation-main__menu-item">
-              <a href="#about" className="navigation__link">
-                Tours
-              </a>
-            </li>
-            <li className="navigation-main__menu-item">
-              <a href="#about" className="navigation__link">
-                About
-              </a>
-            </li>
-            <li className="navigation-main__menu-item">
-              <a href="#about" className="navigation__link">
-                Reviews
-              </a>
-            </li>
-            <li className="navigation-main__menu-item">
-              <a href="#about" className="navigation__link">
-                Contact
-              </a>
-            </li>
-            <li className="navigation-main__menu-item">
-              <a
-                href="https://facebook.com"
-                className="navigation__link"
-              >
-                <img
-                  src={FacebookIcon}
-                  alt="facebook"
-                  className="navigation__social-icon"
-                />
-              </a>
-            </li>
-            <li className="navigation-main__menu-item">
-              <a
-                href="https://instagram.com"
-                className="navigation-main__link"
-              >
-                <img
-                  src={InstagramIcon}
-                  alt="instagram"
-                  className="navigation__social-icon"
-                />
-              </a>
-            </li>
-          </ul>
+          <NavigationMenu navClassName="navigation-main" />
         </header>
       </div>
     );
