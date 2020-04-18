@@ -38,7 +38,7 @@ class NavigationMain extends Component {
           this.state.show ? 'navigation--active' : ''
         }`}
       >
-        <header className="navigation__toolbar">
+        <header className="navigation__navbar">
           <div className="navigation__logo">Livour</div>
           <NavigationMenu navClassName="navigation-main" />
         </header>

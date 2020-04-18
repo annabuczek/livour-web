@@ -1,7 +1,7 @@
 @import '../../styles/variables';
 
 .navigation {
-  &__toolbar {
+  &__navbar {
     position: absolute;
     top: 0;
     right: 0;
@@ -43,7 +43,7 @@
   }
 
   &--active {
-    .navigation__toolbar {
+    .navigation__navbar {
       position: fixed;
       right: 0;
       top: 0;
@@ -104,7 +104,7 @@
   }
 
   &--active {
-    .navigation-mobile__toolbar {
+    .navigation-mobile__navbar {
       position: fixed;
       top: 0;
       right: 0;

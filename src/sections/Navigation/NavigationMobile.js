@@ -20,7 +20,7 @@ class NavigationMobile extends Component {
           this.state.active ? 'navigation-mobile--active' : ''
         }`}
       >
-        <header className="navigation__toolbar navigation-mobile__toolbar">
+        <header className="navigation__navbar navigation-mobile__navbar">
           <div className="navigation__logo">Livour</div>
           <button
             class={`hamburger hamburger--spin ${
