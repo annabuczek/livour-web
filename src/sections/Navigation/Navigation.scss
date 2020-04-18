@@ -77,8 +77,9 @@
   &__menu {
     display: flex;
     flex-direction: column;
+    align-items: center;
     height: 100%;
-    padding: 2.4rem 3rem 1.2rem 3rem;
+    padding: 0rem 3rem 2.4rem 3rem;
     margin: 0;
 
     &-item {
@@ -90,16 +91,16 @@
   }
 
   &__drawer {
-    display: none;
     position: fixed;
-    height: calc(50vh - 5.62rem);
     width: 100vw;
-    top: 5.62rem;
+    top: -28rem;
     right: 0;
     left: 0;
-    bottom: 0;
-    background-color: white;
     z-index: 3;
+    pointer-events: none;
+    background-color: white;
+    box-shadow: 0 0.2rem 1rem $color-shadow;
+    transition: all 0.3s;
   }
 
   &--active {
@@ -110,7 +111,8 @@
       left: 0;
     }
     .navigation-mobile__drawer {
-      display: block;
+      top: 8.02rem;
+      pointer-events: unset;
     }
   }
 }
