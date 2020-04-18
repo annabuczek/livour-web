@@ -4,7 +4,7 @@ import './Navigation.scss';
 
 class NavigationMain extends Component {
   state = {
-    show: false,
+    visible: false,
     scrollPos: 0,
   };
 
@@ -23,9 +23,9 @@ class NavigationMain extends Component {
       valuesPos <= 0 ||
       (scrollPos > scrollPosCurrent && scrollPosCurrent !== 0)
     ) {
-      this.setState({ show: true });
+      this.setState({ visible: true });
     } else {
-      this.setState({ show: false });
+      this.setState({ visible: false });
     }
 
     this.setState({ scrollPos: scrollPosCurrent });
@@ -35,7 +35,7 @@ class NavigationMain extends Component {
     return (
       <div
         className={`navigation-main ${
-          this.state.show ? 'navigation--active' : ''
+          this.state.visible ? 'navigation--visible' : ''
         }`}
       >
         <header className="navigation__navbar">
