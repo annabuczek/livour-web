@@ -26,12 +26,19 @@
 
   &__link {
     color: $color-text;
+    &:hover {
+      color: $color-primary-light;
+    }
   }
 
-  &__social-icon {
-    width: 1.6rem;
+  &__social {
+    display: flex;
     @media only screen and (max-width: $bp-900) {
-      width: 2.4rem;
+      display: none;
+    }
+
+    &-icon {
+      width: 1.6rem;
     }
   }
 
@@ -70,21 +77,22 @@
   &__menu {
     display: flex;
     flex-direction: column;
-    flex-wrap: wrap;
-    padding: 2.4rem 3rem;
+    height: 100%;
+    padding: 2.4rem 3rem 1.2rem 3rem;
     margin: 0;
 
     &-item {
+      display: block;
       list-style: none;
       font-size: 1.8rem;
-      padding: 0.8rem 0;
+      padding: 1.2rem 0;
     }
   }
 
   &__drawer {
     display: none;
     position: fixed;
-    height: 100vh;
+    height: calc(50vh - 5.62rem);
     width: 100vw;
     top: 5.62rem;
     right: 0;
