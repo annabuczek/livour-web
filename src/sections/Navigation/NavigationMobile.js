@@ -6,30 +6,6 @@ import './Hamburger.scss';
 class NavigationMobile extends Component {
   state = {
     open: false,
-    visible: false,
-  };
-
-  componentDidMount() {
-    window.addEventListener('scroll', this.handleScroll);
-  }
-
-  handleScroll = () => {
-    const { scrollPos } = this.state;
-    const scrollPosCurrent = window.scrollY;
-    const valuesPos = document
-      .querySelector('.values__description')
-      .getBoundingClientRect().top;
-
-    if (
-      valuesPos <= 0 ||
-      (scrollPos > scrollPosCurrent && scrollPosCurrent !== 0)
-    ) {
-      this.setState({ visible: true });
-    } else {
-      this.setState({ visible: false });
-    }
-
-    this.setState({ scrollPos: scrollPosCurrent });
   };
 
   handleHamburgerClick = () => {
@@ -42,7 +18,7 @@ class NavigationMobile extends Component {
       <div
         className={`navigation-mobile ${
           this.state.open ? 'navigation-mobile--open' : ''
-        } ${this.state.visible ? 'navigation--visible' : ''}`}
+        } ${this.props.visible ? 'navigation--visible' : ''}`}
       >
         <header className="navigation__navbar navigation-mobile__navbar">
           <div className="navigation__logo">Livour</div>
