@@ -1,0 +1,103 @@
+@import '../../styles/variables';
+@import '../../styles/mixins';
+
+.tours {
+  width: 100%;
+  padding: 8rem 0;
+  background-color: $color-primary-light;
+
+  &__container {
+    @include container;
+    padding: 0 2rem;
+  }
+
+  &__heading {
+    margin: 0 auto 6rem auto;
+    color: $color-text-white;
+    font-size: 3.6rem;
+    text-align: center;
+  }
+
+  &__list {
+    display: flex;
+    margin: 0 -2rem;
+    @media only screen and (max-width: $bp-900) {
+      flex-direction: column;
+    }
+
+    &-item {
+      flex-basis: 35%;
+      display: flex;
+      flex-direction: column;
+      margin: 0 2rem;
+      background-color: $color-background;
+      border-radius: 0.4rem;
+      overflow: hidden;
+      box-shadow: 0 0.2rem 1rem $color-shadow;
+      @media only screen and (max-width: $bp-900) {
+        margin-bottom: 2rem;
+        flex-direction: unset;
+        flex-wrap: wrap;
+      }
+      @media only screen and (max-width: $bp-600) {
+        flex-direction: column;
+        flex-wrap: unset;
+      }
+    }
+  }
+
+  &__item {
+    &-image-container {
+      width: 100%;
+      @media only screen and (max-width: $bp-900) {
+        flex-basis: 50%;
+      }
+    }
+
+    &-image {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      object-position: center center;
+    }
+
+    &-info-container {
+      flex-grow: 1;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      @media only screen and (max-width: $bp-900) {
+        flex-basis: 50%;
+      }
+    }
+
+    &-title {
+      display: block;
+      padding: 0 1.2rem;
+      margin-bottom: 0;
+      color: $color-text-light;
+      text-align: center;
+    }
+
+    &-description {
+      padding: 1.2rem;
+      color: $color-text;
+      text-align: center;
+    }
+
+    &-button {
+      width: 100%;
+      display: block;
+      padding: 1.2rem 2rem;
+      color: $color-text-white;
+      background-color: $color-primary-dark;
+      text-align: center;
+      font-family: $font-family-decorative;
+      font-weight: 800;
+      text-transform: uppercase;
+      &:hover {
+        background-color: $color-primary;
+      }
+    }
+  }
+}

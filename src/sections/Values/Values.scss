@@ -1,12 +1,12 @@
 @import '../../styles/variables';
+@import '../../styles/mixins';
 
 .values {
   width: 100%;
+  padding: 8rem 0;
 
   &__container {
-    width: $container-width;
-    max-width: 100%;
-    margin: 0 auto;
+    @include container;
   }
 
   &__description {
@@ -16,7 +16,7 @@
     font-weight: 600;
     line-height: 1.6;
     text-align: center;
-    margin: 8rem auto 6rem auto;
+    margin: 0 auto 6rem auto;
     @media screen and (max-width: $bp-600) {
       width: 90%;
     }
