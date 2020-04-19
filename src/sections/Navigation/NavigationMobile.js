@@ -1,45 +1,39 @@
-import React, { Component } from 'react';
+import React, { useState } from 'react';
+import useVisibilityOnScroll from './useVisibilityOnScroll';
 import NavigationMenu from './NavigationMenu';
 import './Navigation.scss';
 import './Hamburger.scss';
 
-class NavigationMobile extends Component {
-  state = {
-    open: false,
-  };
+const NavigationMobile = () => {
+  const [open, setOpen] = useState(false);
+  const visible = useVisibilityOnScroll();
 
-  handleHamburgerClick = () => {
-    const { open } = this.state;
-    this.setState({ open: !open });
-  };
-
-  render() {
-    return (
-      <div
-        className={`navigation-mobile ${
-          this.state.open ? 'navigation-mobile--open' : ''
-        } ${this.props.visible ? 'navigation--visible' : ''}`}
-      >
-        <header className="navigation__navbar navigation-mobile__navbar">
-          <div className="navigation__logo">Livour</div>
-          <button
-            class={`hamburger hamburger--spin ${
-              this.state.open ? 'is-active' : ''
-            }`}
-            type="button"
-            onClick={this.handleHamburgerClick}
-          >
-            <span class="hamburger-box">
-              <span class="hamburger-inner"></span>
-            </span>
-          </button>
-        </header>
-        <div className="navigation-mobile__drawer">
-          <NavigationMenu navClassName="navigation-mobile" />
-        </div>
+  return (
+    <div
+      className={`navigation-mobile 
+      ${open ? 'navigation-mobile--open' : ''} 
+      ${visible ? 'navigation--visible' : ''}
+      `}
+    >
+      <header className="navigation__navbar navigation-mobile__navbar">
+        <div className="navigation__logo">Livour</div>
+        <button
+          className={`hamburger hamburger--spin ${
+            open ? 'is-active' : ''
+          }`}
+          type="button"
+          onClick={(e) => setOpen(!open)}
+        >
+          <span className="hamburger-box">
+            <span className="hamburger-inner"></span>
+          </span>
+        </button>
+      </header>
+      <div className="navigation-mobile__drawer">
+        <NavigationMenu navClassName="navigation-mobile" />
       </div>
-    );
-  }
-}
+    </div>
+  );
+};
 
 export default NavigationMobile;

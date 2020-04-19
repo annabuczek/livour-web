@@ -13,7 +13,7 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
-    transition: 0.5s all;
+    transition: $transition-time-primary box-shadow;
   }
 
   &__logo {
@@ -46,11 +46,7 @@
   &--visible {
     .navigation__navbar {
       position: fixed;
-      right: 0;
-      top: 0;
-      left: 0;
       box-shadow: 0 0.2rem 1rem $color-shadow;
-      animation: navbar-visible 0.5s;
     }
   }
 }
@@ -102,32 +98,19 @@
     pointer-events: none;
     background-color: white;
     box-shadow: 0 0.2rem 1rem $color-shadow;
-    transition: all 0.5s;
+    transition: all $transition-time-primary;
   }
 
   &--open {
     .navigation__navbar {
       box-shadow: unset;
       animation: unset;
-    }
-    .navigation-mobile__navbar {
       position: fixed;
-      top: 0;
-      right: 0;
-      left: 0;
     }
+
     .navigation-mobile__drawer {
       top: 8.02rem;
       pointer-events: unset;
     }
-  }
-}
-
-@keyframes navbar-visible {
-  from {
-    top: -8rem;
-  }
-  to {
-    top: 0;
   }
 }
