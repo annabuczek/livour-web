@@ -8,19 +8,19 @@
 
   &__container {
     @include container;
-    padding: 0 2rem;
+    padding: 0 $space-large;
   }
 
   &__heading {
     margin: 0 auto 6rem auto;
     color: $color-text-white;
-    font-size: 3.6rem;
+    font-size: $font-size-h2;
     text-align: center;
   }
 
   &__list {
     display: flex;
-    margin: 0 -2rem;
+    margin: 0 -$space-medium;
     @media only screen and (max-width: $bp-900) {
       flex-direction: column;
     }
@@ -29,13 +29,13 @@
       flex-basis: 35%;
       display: flex;
       flex-direction: column;
-      margin: 0 2rem;
+      margin: 0 $space-medium;
       background-color: $color-background;
       border-radius: 0.4rem;
       overflow: hidden;
       box-shadow: 0 0.2rem 1rem $color-shadow;
       @media only screen and (max-width: $bp-900) {
-        margin-bottom: 2rem;
+        margin-bottom: $space-large;
         flex-direction: unset;
         flex-wrap: wrap;
       }
@@ -73,14 +73,14 @@
 
     &-title {
       display: block;
-      padding: 0 1.2rem;
+      padding: 0 $space-small;
       margin-bottom: 0;
       color: $color-text-light;
       text-align: center;
     }
 
     &-description {
-      padding: 1.2rem;
+      padding: $space-small;
       color: $color-text;
       text-align: center;
     }
@@ -88,7 +88,7 @@
     &-button {
       width: 100%;
       display: block;
-      padding: 1.2rem 2rem;
+      padding: $space-small $space-large;
       color: $color-text-white;
       background-color: $color-primary-dark;
       text-align: center;
