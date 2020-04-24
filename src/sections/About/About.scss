@@ -1,0 +1,60 @@
+@import '../../styles/variables';
+@import '../../styles/mixins';
+
+.about {
+  width: 100%;
+  padding: 8rem 0;
+  background-color: $color-background;
+
+  &__container {
+    @include container;
+    padding: 0 $space-large;
+  }
+
+  &__heading {
+    margin: 0 auto 6rem auto;
+    color: $color-primary;
+    font-size: $font-size-h2;
+    text-align: center;
+  }
+
+  &__content {
+    display: flex;
+    @media only screen and (max-width: $bp-900) {
+      flex-direction: column;
+    }
+  }
+  &__info {
+    flex-basis: 50%;
+    @media only screen and (max-width: $bp-900) {
+      order: 2;
+    }
+    &-heading {
+      color: $color-text;
+      font-size: $font-size-h3;
+    }
+
+    &-paragraph {
+      color: $color-text-light;
+      line-height: 1.6;
+    }
+  }
+  &__image {
+    &-container {
+      flex-basis: 50%;
+      padding: $space-medium 0 $space-medium $space-large;
+      @media only screen and (max-width: $bp-900) {
+        order: 1;
+        padding: 0 0 $space-medium 0;
+      }
+      @media only screen and (max-width: $bp-600) {
+        padding: 0;
+      }
+    }
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    object-position: center center;
+    border-radius: 0.4rem;
+  }
+}
