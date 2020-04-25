@@ -4,7 +4,7 @@
 .reviews {
   width: 100%;
   padding: 8rem 0;
-  background-color: $color-primary;
+  background-color: $color-primary-light;
 
   &__container {
     @include container;
@@ -16,5 +16,118 @@
     color: $color-text-white;
     font-size: $font-size-h2;
     text-align: center;
+  }
+
+  &-carousel {
+    &__container {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      @media only screen and (max-width: $bp-600) {
+        flex-wrap: wrap;
+      }
+    }
+    &__arrow {
+      flex-shrink: 0;
+      width: 6rem;
+      height: 6rem;
+      margin: 0 $space-medium;
+      border-radius: 50%;
+      background-color: $color-primary;
+      border: none;
+      transition: $transition-time-primary;
+      @media only screen and (max-width: $bp-900) {
+        width: 4rem;
+        height: 4rem;
+      }
+
+      &--left {
+        margin-left: 0;
+      }
+      &--right {
+        margin-right: 0;
+      }
+
+      img {
+        width: 50%;
+        height: 50%;
+        object-fit: cover;
+        object-position: center center;
+      }
+
+      &:hover {
+        background-color: $color-primary-dark;
+        cursor: pointer;
+      }
+    }
+    &__card {
+      display: flex;
+      flex-direction: column;
+      max-width: 70%;
+      padding: $space-large;
+      background-color: $color-background;
+      border-radius: 0.4rem;
+      box-shadow: 0 0.2rem 1rem $color-shadow-dark;
+      @media only screen and (max-width: $bp-900) {
+        max-width: unset;
+        flex-grow: 2;
+      }
+      @media only screen and (max-width: $bp-600) {
+        order: -2;
+        flex-basis: 100%;
+        margin-bottom: $space-large;
+      }
+
+      &-top {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        @media only screen and (max-width: $bp-600) {
+          flex-direction: column;
+        }
+      }
+      &-image {
+        width: 10rem;
+        height: 10rem;
+        margin: 0 $space-medium $space-medium $space-medium;
+        border-radius: 50%;
+        overflow: hidden;
+        box-shadow: 0 0.2rem 1rem $color-shadow;
+
+        img {
+          width: 100%;
+          height: 100%;
+          object-fit: cover;
+          object-position: center center;
+        }
+      }
+
+      &-info {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      }
+
+      &-author {
+        font-size: $font-size-h3;
+        font-weight: 800;
+      }
+
+      &-country {
+        font-size: $font-size-regular;
+      }
+
+      &-bottom {
+        width: 100%;
+        margin-top: $space-medium;
+      }
+
+      &-review {
+        text-align: center;
+        font-size: $font-size-regular;
+        line-height: 1.4;
+        color: $color-text;
+      }
+    }
   }
 }
