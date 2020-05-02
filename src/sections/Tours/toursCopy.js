@@ -1,4 +1,4 @@
-const tour1 = require('../../images/sri_lanca.jpg');
+const tour1 = require('../../images/sri-lanca.jpg');
 const tour2 = require('../../images/nepal.jpg');
 const tour3 = require('../../images/cambodia.jpg');
 
