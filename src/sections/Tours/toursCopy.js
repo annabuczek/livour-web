@@ -4,24 +4,24 @@ const tour3 = require('../../images/cambodia.jpg');
 
 export default [
   {
-    thumbnail: tour1,
-    alt: 'sri lanca',
+    image: tour1,
+    imageAlt: 'sri lanca',
     title: 'Natural beauty, famous tea and flavourful food',
     location: 'Sri Lanca',
     duration: '18-22 days',
     available: 'All year',
   },
   {
-    thumbnail: tour2,
-    alt: 'nepal',
+    image: tour2,
+    imageAlt: 'nepal',
     title: "Trekkers' paradise, golden temples and Himalayan views",
     location: 'Nepal',
     duration: '22-26 days',
     available: 'Jan-Apr',
   },
   {
-    thumbnail: tour3,
-    alt: 'cambodia',
+    image: tour3,
+    imageAlt: 'cambodia',
     title:
       'Colorful landscapes, stunning caves and authentic adventure',
     location: 'Cambodia',

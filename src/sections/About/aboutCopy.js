@@ -10,5 +10,5 @@ export default {
   par3:
     'Donec at ante vitae mauris ullamcorper finibus nec cursus diam. Aliquam quis lobortis felis, at malesuada erat. Quisque auctor a turpis vitae placerat.',
   image: image,
-  alt: 'woman travelling in the car',
+  imageAlt: 'woman travelling in the car',
 };

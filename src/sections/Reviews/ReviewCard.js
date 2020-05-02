@@ -5,7 +5,7 @@ const ReviewCard = ({ review }) => {
     <div className="reviews-carousel__card">
       <div className="reviews-carousel__card-top">
         <div className="reviews-carousel__card-image">
-          <img src={review.image} alt={review.alt} />
+          <img src={review.image} alt={review.imageAlt} />
         </div>
         <div className="reviews-carousel__card-info">
           <div className="reviews-carousel__card-author">

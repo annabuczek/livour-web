@@ -5,7 +5,7 @@ const ValuesItem = ({ value }) => {
     <div className="values__list-item">
       <img
         className="values__item-image"
-        alt={value.alt}
+        alt={value.imageAlt}
         src={value.image}
       />
       <h2 className="values__item-heading">{value.title}</h2>

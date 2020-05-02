@@ -5,8 +5,8 @@ const ToursItem = ({ tour }) => {
     <div className="tours__list-item">
       <div className="tours__item-image-container">
         <img
-          src={tour.thumbnail}
-          alt={tour.alt}
+          src={tour.image}
+          alt={tour.imageAlt}
           className="tours__item-image"
         />
       </div>

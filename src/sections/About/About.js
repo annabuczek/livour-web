@@ -17,7 +17,7 @@ const About = () => {
           <div className="about__image-container">
             <img
               src={about.image}
-              alt={about.alt}
+              alt={about.imageAlt}
               className="about__image"
             />
           </div>
