@@ -1,0 +1,150 @@
+@import '../../styles/variables';
+@import '../../styles/mixins';
+
+.contact {
+  width: 100%;
+  padding: 8rem 0;
+  background-color: $color-background;
+
+  &__container {
+    @include container;
+    padding: 0 $space-large;
+  }
+
+  &__heading {
+    margin: 0 auto 6rem auto;
+    color: $color-primary;
+    font-size: $font-size-h2;
+    text-align: center;
+  }
+
+  &__content {
+    display: flex;
+    @media only screen and (max-width: $bp-900) {
+      flex-direction: column;
+    }
+  }
+
+  &__map {
+    display: block;
+    width: 100%;
+    min-height: 45rem;
+    height: 100%;
+    border: none;
+    border-radius: 0.4rem;
+    box-shadow: 0 0.2rem 1rem $color-shadow;
+    @media only screen and (max-width: $bp-600) {
+      min-height: 30rem;
+    }
+
+    &-container {
+      flex-basis: 45%;
+      position: relative;
+      z-index: 1;
+      margin: $space-medium $space-xlarge $space-medium 0;
+      @media only screen and (max-width: $bp-900) {
+        order: 1;
+        margin: $space-small $space-small $space-medium 0;
+      }
+      @media only screen and (max-width: $bp-600) {
+        margin-bottom: 0;
+      }
+
+      &::after {
+        content: '';
+        position: absolute;
+        bottom: $space-small;
+        left: $space-small;
+        height: 100%;
+        width: 100%;
+        z-index: -1;
+        background-color: $color-primary;
+        border-radius: 0.4rem;
+      }
+    }
+  }
+
+  &__form {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 6rem -1.2rem 0 -1.2rem;
+    @media only screen and (max-width: $bp-900) {
+      margin-top: $space-xlarge;
+    }
+
+    &-container {
+      flex-basis: 55%;
+      @media only screen and (max-width: $bp-900) {
+        order: 2;
+      }
+    }
+
+    &-heading {
+      margin-top: $space-medium;
+      color: $color-text;
+      font-size: $font-size-h3;
+      @media only screen and (max-width: $bp-900) {
+        margin-top: $space-large;
+      }
+    }
+
+    &-paragraph {
+      color: $color-text;
+      line-height: 1.6;
+    }
+
+    &-label {
+      display: flex;
+      flex-direction: column;
+      flex-basis: 100%;
+      color: $color-text-light;
+      margin: 0 $space-small $space-large $space-small;
+
+      &--small {
+        flex-basis: 30%;
+        flex-grow: 1;
+        @media only screen and (max-width: $bp-600) {
+          flex-basis: 100%;
+        }
+      }
+    }
+
+    &-input {
+      width: 100%;
+      margin-top: $space-small;
+      padding: $space-small $space-medium;
+      font-size: $font-size-regular;
+      background-color: rgba(
+        $color: $color-primary-light,
+        $alpha: 0.3
+      );
+      border: none;
+      color: black;
+
+      &:hover {
+        border: 0.2rem solid $color-primary-dark;
+        margin: 1rem 0 -0.2rem 0;
+        padding: $space-small 1.6rem;
+      }
+    }
+
+    &-submit-button {
+      display: block;
+      margin: $space-medium $space-small;
+      padding: $space-small $space-large;
+      border: none;
+      border-radius: 0.4rem;
+      color: $color-text-white;
+      background-color: $color-primary-dark;
+      text-align: center;
+      font-size: unset;
+      font-family: $font-family-decorative;
+      font-weight: 800;
+      text-transform: uppercase;
+
+      &:hover {
+        background-color: $color-primary;
+      }
+    }
+  }
+}
