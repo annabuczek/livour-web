@@ -1,4 +1,6 @@
 import React, { useState } from 'react';
+import FacebookIcon from '../../images/facebook.svg';
+import InstagramIcon from '../../images/instagram.svg';
 import contact from './contactCopy';
 import './Contact.scss';
 
@@ -44,6 +46,22 @@ const Contact = () => {
               {contact.subtitle}
             </h3>
             <p className="contact__form-paragraph">{contact.par}</p>
+            <div className="contact__form-social">
+              <a href="https://facebook.com">
+                <img
+                  src={FacebookIcon}
+                  alt="facebook"
+                  className="contact__form-social-icon"
+                />
+              </a>
+              <a href="https://instagram.com">
+                <img
+                  src={InstagramIcon}
+                  alt="instagram"
+                  className="contact__form-social-icon"
+                />
+              </a>
+            </div>
             <form
               className="contact__form"
               onSubmit={(e) => handleSubmit(e)}
