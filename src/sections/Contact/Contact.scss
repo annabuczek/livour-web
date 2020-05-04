@@ -121,8 +121,33 @@
       border: none;
       color: black;
 
+      &--area {
+        height: 12rem;
+        resize: none;
+        &:hover {
+          height: 12.4rem;
+        }
+        &:focus {
+          height: 12.4rem;
+        }
+      }
+
       &:hover {
         border: 0.2rem solid $color-primary-dark;
+        margin: 1rem 0 -0.2rem 0;
+        padding: $space-small 1.6rem;
+      }
+
+      &:focus {
+        border: 0.2rem solid $color-primary-dark;
+        outline: none;
+        margin: 1rem 0 -0.2rem 0;
+        padding: $space-small 1.6rem;
+      }
+
+      &:focus:invalid {
+        border: 0.2rem solid red;
+        outline: none;
         margin: 1rem 0 -0.2rem 0;
         padding: $space-small 1.6rem;
       }

@@ -1,11 +1,28 @@
-import React from 'react';
+import React, { useState } from 'react';
 import contact from './contactCopy';
 import './Contact.scss';
 
 const Contact = () => {
-  
+  const [formData, setFormData] = useState({
+    firstName: '',
+    lastName: '',
+    email: '',
+    subject: '',
+    message: '',
+  });
+
   const handleSubmit = (e) => {
+    const { firstName, lastName, email, subject, message } = formData;
+
     e.preventDefault();
+    alert(
+      `Message Sent\n\nSubject: ${subject}\nMessage: ${message}\n\nFrom: ${firstName} ${lastName}\n${email}`,
+    );
+    e.target.reset();
+  };
+
+  const handleChange = (e) => {
+    setFormData({ ...formData, [e.target.name]: e.target.value });
   };
 
   return (
@@ -36,6 +53,9 @@ const Contact = () => {
                 <input
                   type="text"
                   name="firstName"
+                  required
+                  maxLength="20"
+                  onChange={(e) => handleChange(e)}
                   className="contact__form-input"
                 />
               </label>
@@ -44,6 +64,9 @@ const Contact = () => {
                 <input
                   type="text"
                   name="lastName"
+                  required
+                  maxLength="20"
+                  onChange={(e) => handleChange(e)}
                   className="contact__form-input"
                 />
               </label>
@@ -52,6 +75,9 @@ const Contact = () => {
                 <input
                   type="email"
                   name="email"
+                  required
+                  maxLength="45"
+                  onChange={(e) => handleChange(e)}
                   className="contact__form-input"
                 />
               </label>
@@ -60,15 +86,20 @@ const Contact = () => {
                 <input
                   type="text"
                   name="subject"
+                  required
+                  maxLength="45"
+                  onChange={(e) => handleChange(e)}
                   className="contact__form-input"
                 />
               </label>
               <label className="contact__form-label">
                 Message
-                <input
-                  type="text"
+                <textarea
                   name="message"
-                  className="contact__form-input"
+                  required
+                  maxLength="200"
+                  onChange={(e) => handleChange(e)}
+                  className="contact__form-input contact__form-input--area"
                 />
               </label>
               <button
