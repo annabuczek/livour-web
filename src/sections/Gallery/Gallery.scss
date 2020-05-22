@@ -1,0 +1,20 @@
+@import '../../styles/variables';
+@import '../../styles/mixins';
+
+.gallery {
+  width: 100%;
+  padding: 8rem 0;
+  background-color: $color-primary-light;
+
+  &__container {
+    @include container;
+    padding: 0 $space-large;
+  }
+
+  &__heading {
+    margin: 0 auto 6rem auto;
+    color: $color-text-white;
+    font-size: $font-size-h2;
+    text-align: center;
+  }
+}
