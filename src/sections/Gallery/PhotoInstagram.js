@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import PropTypes from 'prop-types';
 import { fetchPhoto } from '../../api/instagram';
+import { formatPhotoCaption } from '../../helpers/instagram';
 
 const PhotoInstagram = ({ id }) => {
   const [photoUrl, setPhotoUrl] = useState('');
@@ -11,7 +12,7 @@ const PhotoInstagram = ({ id }) => {
       const photo = await fetchPhoto(id);
 
       setPhotoUrl(photo.media_url);
-      setPhotoCaption(photo.caption);
+      setPhotoCaption(formatPhotoCaption(photo.caption));
     };
     fetch();
   }, [id]);
@@ -23,6 +24,7 @@ const PhotoInstagram = ({ id }) => {
         src={photoUrl}
         alt="instagram"
       />
+      <p className="gallery__image-caption">{photoCaption}</p>
     </div>
   );
 };

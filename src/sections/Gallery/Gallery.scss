@@ -38,6 +38,23 @@
     object-fit: cover;
     object-position: center;
 
+    &-caption {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      top: 0;
+      right: 0;
+      padding: $space-xlarge $space-medium;
+      color: $color-text-white;
+      text-align: center;
+      font-size: $font-size-regular;
+      font-family: $font-family-decorative;
+      overflow-wrap: break-word;
+      opacity: 0;
+      z-index: 1;
+      transition: opacity $transition-time-primary;
+    }
+
     &-wrapper {
       position: relative;
       width: 100%;
@@ -51,13 +68,19 @@
         bottom: 0;
         right: 0;
         left: 0;
-        background-color: rgba(0, 0, 0, 0.5);
+        background-color: rgba(0, 0, 0, 0.8);
         transition: opacity $transition-time-primary;
         opacity: 0;
       }
 
       &:hover::after {
         opacity: 1;
+      }
+
+      &:hover {
+        .gallery__image-caption {
+          opacity: 1;
+        }
       }
     }
   }
