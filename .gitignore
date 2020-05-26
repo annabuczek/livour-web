@@ -20,3 +20,5 @@ yarn-error.log*
 
 #local configuration
 copy.txt
+
+.env

@@ -1,0 +1,93 @@
+@import '../../styles/variables';
+@import '../../styles/mixins';
+
+.gallery {
+  width: 100%;
+  padding: 8rem 0;
+  background-color: $color-primary-light;
+
+  &__container {
+    @include container;
+    padding: 0 $space-large;
+  }
+
+  &__heading {
+    margin: 0 auto 6rem auto;
+    color: $color-text-white;
+    font-size: $font-size-h2;
+    text-align: center;
+  }
+
+  &__content {
+    display: grid;
+    width: 100%;
+    grid-template-columns: repeat(4, 1fr);
+    gap: $space-small;
+
+    @media only screen and (max-width: $bp-600) {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+
+  &__image {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    right: 0;
+    object-fit: cover;
+    object-position: center;
+
+    &-caption {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      top: 0;
+      right: 0;
+      padding: $space-xlarge $space-medium;
+      color: $color-text-white;
+      text-align: center;
+      font-size: $font-size-regular;
+      font-family: $font-family-decorative;
+      overflow-wrap: break-word;
+      opacity: 0;
+      z-index: 1;
+      transition: opacity $transition-time-primary;
+    }
+
+    &-wrapper {
+      position: relative;
+      width: 100%;
+      height: 0;
+      padding-bottom: 100%;
+
+      &::after {
+        content: '';
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        right: 0;
+        left: 0;
+        background-color: rgba(0, 0, 0, 0.8);
+        transition: opacity $transition-time-primary;
+        opacity: 0;
+      }
+
+      &:hover::after {
+        opacity: 1;
+      }
+
+      &:hover {
+        .gallery__image-caption {
+          opacity: 1;
+        }
+      }
+    }
+  }
+  &__button {
+    @include button;
+    margin-top: $space-xlarge;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
