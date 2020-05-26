@@ -1,8 +1,20 @@
-import React from 'react';
-import nature from '../../images/nature.jpg';
+import React, { useState, useEffect } from 'react';
+import PhotoInstagram from './PhotoInstagram';
+import { fetchPhotoIds } from '../../api/instagram';
 import './Gallery.scss';
 
 const Gallery = () => {
+  const [photoIds, setPhotoIds] = useState([]);
+
+  useEffect(() => {
+    const fetch = async () => {
+      const photoIds = await fetchPhotoIds();
+
+      setPhotoIds(photoIds);
+    };
+    fetch();
+  }, []);
+
   return (
     <section className="gallery">
       <div className="gallery__container">
@@ -10,66 +22,15 @@ const Gallery = () => {
           Our adventures on Instagram
         </h2>
         <div className="gallery__content">
-          <div className="gallery__image-wrapper">
-            <img
-              className="gallery__image"
-              src={nature}
-              alt="instagram"
-            />
-          </div>
-          <div className="gallery__image-wrapper">
-            <img
-              className="gallery__image"
-              src={nature}
-              alt="instagram"
-            />
-          </div>
-          <div className="gallery__image-wrapper">
-            <img
-              className="gallery__image"
-              src={nature}
-              alt="instagram"
-            />
-          </div>
-          <div className="gallery__image-wrapper">
-            <img
-              className="gallery__image"
-              src={nature}
-              alt="instagram"
-            />
-          </div>
-          <div className="gallery__image-wrapper">
-            <img
-              className="gallery__image"
-              src={nature}
-              alt="instagram"
-            />
-          </div>
-          <div className="gallery__image-wrapper">
-            <img
-              className="gallery__image"
-              src={nature}
-              alt="instagram"
-            />
-          </div>
-          <div className="gallery__image-wrapper">
-            <img
-              className="gallery__image"
-              src={nature}
-              alt="instagram"
-            />
-          </div>
-          <div className="gallery__image-wrapper">
-            <img
-              className="gallery__image"
-              src={nature}
-              alt="instagram"
-            />
-          </div>
+          {photoIds.map((photo, index) => (
+            <PhotoInstagram key={`photo-${index}`} id={photo.id} />
+          ))}
         </div>
         <button
           onClick={() =>
-            window.location.assign('https://instagram.com')
+            window.location.assign(
+              'https://instagram.com/littraveler',
+            )
           }
           className="gallery__button"
         >
