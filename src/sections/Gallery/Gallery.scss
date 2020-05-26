@@ -61,4 +61,10 @@
       }
     }
   }
+  &__button {
+    @include button;
+    margin-top: $space-xlarge;
+    margin-left: auto;
+    margin-right: auto;
+  }
 }

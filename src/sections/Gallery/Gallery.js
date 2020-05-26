@@ -67,6 +67,14 @@ const Gallery = () => {
             />
           </div>
         </div>
+        <button
+          onClick={() =>
+            window.location.assign('https://instagram.com')
+          }
+          className="gallery__button"
+        >
+          Follow us on Instagram
+        </button>
       </div>
     </section>
   );
