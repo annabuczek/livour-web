@@ -1,23 +1,23 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "7a5500825a6aac2bf6665e1679a694d1",
+    "revision": "9f9da450ca2b12ceca747636ff2030b5",
     "url": "/livour-web/index.html"
   },
   {
-    "revision": "acf70913172fd1a76592",
-    "url": "/livour-web/static/css/main.6ceb2c39.chunk.css"
+    "revision": "2ca27d30b9e00258d580",
+    "url": "/livour-web/static/css/main.9b8f9569.chunk.css"
   },
   {
-    "revision": "9b4c5653ea59b5166098",
-    "url": "/livour-web/static/js/2.669f4e6f.chunk.js"
+    "revision": "8322e326f9d40ff66b5e",
+    "url": "/livour-web/static/js/2.4615cb0b.chunk.js"
   },
   {
     "revision": "e88a3e95b5364d46e95b35ae8c0dc27d",
-    "url": "/livour-web/static/js/2.669f4e6f.chunk.js.LICENSE.txt"
+    "url": "/livour-web/static/js/2.4615cb0b.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "acf70913172fd1a76592",
-    "url": "/livour-web/static/js/main.90b5b43b.chunk.js"
+    "revision": "2ca27d30b9e00258d580",
+    "url": "/livour-web/static/js/main.66dc31c9.chunk.js"
   },
   {
     "revision": "5dbfb70fc7c6abfa8bcc",
