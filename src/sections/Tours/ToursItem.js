@@ -1,4 +1,5 @@
 import React from 'react';
+import ScrollLink from '../../components/ScrollLink';
 
 const ToursItem = ({ tour }) => {
   return (
@@ -27,9 +28,9 @@ const ToursItem = ({ tour }) => {
               {tour.available}
             </p>
           </div>
-          <a href="#contact" className="tours__item-button">
+          <ScrollLink to="contact" className="tours__item-button">
             More Info
-          </a>
+          </ScrollLink>
         </div>
       </div>
     </div>
