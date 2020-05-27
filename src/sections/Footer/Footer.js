@@ -51,7 +51,11 @@ const Footer = () => {
             <h3 className="footer__title">Social Media</h3>
             <ul className="footer__social-list">
               <li className="footer__social-item">
-                <a href="https://facebook.com" className="">
+                <a
+                  href="https://facebook.com"
+                  target="_blank"
+                  rel="noreferrer noopener"
+                >
                   <img
                     src={FacebookIcon}
                     alt="facebook"
@@ -60,7 +64,11 @@ const Footer = () => {
                 </a>
               </li>
               <li className="footer__social-item">
-                <a href="https://instagram.com" className="">
+                <a
+                  href="https://instagram.com"
+                  target="_blank"
+                  rel="noreferrer noopener"
+                >
                   <img
                     src={InstagramIcon}
                     alt="instagram"
@@ -69,7 +77,11 @@ const Footer = () => {
                 </a>
               </li>
               <li className="footer__social-item">
-                <a href="https://tripadvisor.com" className="">
+                <a
+                  href="https://tripadvisor.com"
+                  target="_blank"
+                  rel="noreferrer noopener"
+                >
                   <img
                     src={TripAdvisorIcon}
                     alt="tripadvisor"
@@ -78,7 +90,11 @@ const Footer = () => {
                 </a>
               </li>
               <li className="footer__social-item">
-                <a href="https://youtube.com" className="">
+                <a
+                  href="https://youtube.com"
+                  target="_blank"
+                  rel="noreferrer noopener"
+                >
                   <img
                     src={YouTubeIcon}
                     alt="youtube"

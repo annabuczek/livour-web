@@ -27,11 +27,12 @@ const Gallery = () => {
           ))}
         </div>
         <button
-          onClick={() =>
-            window.location.assign(
+          onClick={() => {
+            window.open(
               'https://instagram.com/littraveler',
-            )
-          }
+              '_blank',
+            );
+          }}
           className="gallery__button"
         >
           Follow us on Instagram

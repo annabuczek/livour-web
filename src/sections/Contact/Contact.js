@@ -47,14 +47,22 @@ const Contact = () => {
             </h3>
             <p className="contact__form-paragraph">{contact.par}</p>
             <div className="contact__form-social">
-              <a href="https://facebook.com">
+              <a
+                href="https://facebook.com"
+                target="_blank"
+                rel="noreferrer noopener"
+              >
                 <img
                   src={FacebookIcon}
                   alt="facebook"
                   className="contact__form-social-icon"
                 />
               </a>
-              <a href="https://instagram.com">
+              <a
+                href="https://instagram.com"
+                target="_blank"
+                rel="noreferrer noopener"
+              >
                 <img
                   src={InstagramIcon}
                   alt="instagram"

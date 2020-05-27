@@ -34,7 +34,12 @@ const NaviagtionMenu = ({ navClassName }) => {
       </li>
       <div className="navigation__social">
         <li className={`${navClassName}__menu-item`}>
-          <a href="https://facebook.com" className="navigation__link">
+          <a
+            href="https://facebook.com"
+            target="_blank"
+            rel="noreferrer noopener"
+            className="navigation__link"
+          >
             <img
               src={FacebookIcon}
               alt="facebook"
@@ -45,6 +50,8 @@ const NaviagtionMenu = ({ navClassName }) => {
         <li className={`${navClassName}__menu-item`}>
           <a
             href="https://instagram.com"
+            target="_blank"
+            rel="noreferrer noopener"
             className="navigation__link"
           >
             <img
