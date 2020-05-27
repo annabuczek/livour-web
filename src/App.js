@@ -1,6 +1,7 @@
 import React from 'react';
 import About from './sections/About/About';
 import Contact from './sections/Contact/Contact';
+import Footer from './sections/Footer/Footer';
 import Gallery from './sections/Gallery/Gallery';
 import MainBanner from './sections/MainBanner/MainBanner';
 import NavigationMain from './sections/Navigation/NavigationMain';
@@ -22,6 +23,7 @@ function App() {
       <Reviews />
       <Contact />
       <Gallery />
+      <Footer />
     </div>
   );
 }

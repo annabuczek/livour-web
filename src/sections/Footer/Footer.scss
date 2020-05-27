@@ -1,0 +1,95 @@
+@import '../../styles/variables';
+@import '../../styles/mixins';
+
+.footer {
+  width: 100%;
+  padding: 8rem 0 0 0;
+  color: $color-text-white;
+  background-color: $color-primary-dark;
+
+  &__container {
+    @include container;
+    display: flex;
+    flex-direction: column;
+    padding: 0 $space-large;
+  }
+
+  &__content {
+    display: flex;
+    justify-content: space-evenly;
+    font-size: 1.6rem;
+    @media only screen and (max-width: $bp-900) {
+      font-size: 1.4rem;
+    }
+    @media only screen and (max-width: $bp-600) {
+      flex-direction: column;
+      align-items: flex-start;
+      padding: 0 $space-xlarge;
+    }
+  }
+
+  &__title {
+    font-size: $font-size-regular;
+    text-transform: uppercase;
+    line-height: 2;
+  }
+
+  &__navigation {
+    &-list {
+      list-style: none;
+      padding-left: 0;
+    }
+
+    &-item {
+      line-height: 2;
+    }
+
+    &-link {
+      color: $color-text-white;
+      &:hover {
+        color: $color-primary-light;
+      }
+    }
+  }
+
+  &__social {
+    &-list {
+      display: flex;
+      list-style: none;
+      padding-left: 0;
+      margin: 0 -0.6rem;
+      @media only screen and (max-width: $bp-900) {
+        flex-direction: column;
+        align-items: center;
+      }
+      @media only screen and (max-width: $bp-600) {
+        flex-direction: unset;
+        align-items: unset;
+      }
+    }
+    &-item {
+      padding: 0.6rem;
+    }
+    &-icon {
+      width: 3rem;
+      transition: transform $transition-time-primary;
+      @media only screen and (max-width: $bp-900) {
+        width: 2.6rem;
+      }
+      &:hover {
+        transform: scale(1.2);
+      }
+    }
+  }
+
+  &__divider {
+    width: 100%;
+    height: 0.1rem;
+    margin-top: $space-xlarge;
+    background-color: rgba(255, 255, 255, 0.3);
+  }
+
+  &__copyrights {
+    font-size: 1.2rem;
+  }
+}
