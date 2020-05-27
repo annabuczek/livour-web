@@ -3,7 +3,7 @@ import './MainBanner.scss';
 
 const MainBanner = () => {
   return (
-    <section className="main-banner">
+    <section className="main-banner" id="home">
       <h1 className="main-banner__heading">
         Are you ready for another adventure?
       </h1>

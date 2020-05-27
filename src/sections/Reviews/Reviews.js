@@ -4,7 +4,7 @@ import './Reviews.scss';
 
 const Reviews = () => {
   return (
-    <section className="reviews">
+    <section className="reviews" id="reviews">
       <div className="reviews__container">
         <h2 className="reviews__heading">Reviews</h2>
         <ReviewsCarousel />

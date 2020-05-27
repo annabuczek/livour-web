@@ -30,6 +30,9 @@
     &:hover {
       color: $color-primary-light;
     }
+    &--active {
+      color: $color-primary-light;
+    }
   }
 
   &__social {

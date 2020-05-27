@@ -1,5 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
+import ScrollLink from '../../components/ScrollLink';
 import FacebookIcon from '../../images/facebook.svg';
 import InstagramIcon from '../../images/instagram.svg';
 
@@ -7,29 +8,29 @@ const NaviagtionMenu = ({ navClassName }) => {
   return (
     <ul className={`${navClassName}__menu`}>
       <li className={`${navClassName}__menu-item`}>
-        <a href="#about" className="navigation__link">
+        <ScrollLink className="navigation__link" to="home">
           Home
-        </a>
+        </ScrollLink>
       </li>
       <li className={`${navClassName}__menu-item`}>
-        <a href="#about" className="navigation__link">
+        <ScrollLink className="navigation__link" to="tours">
           Tours
-        </a>
+        </ScrollLink>
       </li>
       <li className={`${navClassName}__menu-item`}>
-        <a href="#about" className="navigation__link">
+        <ScrollLink className="navigation__link" to="about">
           About
-        </a>
+        </ScrollLink>
       </li>
       <li className={`${navClassName}__menu-item`}>
-        <a href="#about" className="navigation__link">
+        <ScrollLink className="navigation__link" to="reviews">
           Reviews
-        </a>
+        </ScrollLink>
       </li>
       <li className={`${navClassName}__menu-item`}>
-        <a href="#about" className="navigation__link">
+        <ScrollLink className="navigation__link" to="contact">
           Contact
-        </a>
+        </ScrollLink>
       </li>
       <div className="navigation__social">
         <li className={`${navClassName}__menu-item`}>

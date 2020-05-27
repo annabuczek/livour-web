@@ -5,7 +5,7 @@ import './Tours.scss';
 
 const Tours = () => {
   return (
-    <section className="tours">
+    <section className="tours" id="tours">
       <div className="tours__container">
         <h2 className="tours__heading">Our Tours</h2>
         <div className="tours__list">
