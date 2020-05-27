@@ -2,7 +2,7 @@ import React from 'react';
 import { Link } from 'react-scroll';
 import PropTypes from 'prop-types';
 
-const ScrollLink = ({ className, to, children }) => {
+const ScrollLink = ({ className, to, onSetActive, children }) => {
   return (
     <Link
       className={className}
@@ -12,6 +12,7 @@ const ScrollLink = ({ className, to, children }) => {
       smooth={true}
       offset={-80}
       duration={500}
+      onSetActive={onSetActive}
     >
       {children}
     </Link>

@@ -4,31 +4,54 @@ import ScrollLink from '../../components/ScrollLink';
 import FacebookIcon from '../../images/facebook.svg';
 import InstagramIcon from '../../images/instagram.svg';
 
-const NaviagtionMenu = ({ navClassName }) => {
+const NaviagtionMenu = ({
+  handleMobileNavItemClick,
+  navClassName,
+}) => {
   return (
     <ul className={`${navClassName}__menu`}>
       <li className={`${navClassName}__menu-item`}>
-        <ScrollLink className="navigation__link" to="home">
+        <ScrollLink
+          className="navigation__link"
+          to="home"
+          onSetActive={handleMobileNavItemClick}
+        >
           Home
         </ScrollLink>
       </li>
       <li className={`${navClassName}__menu-item`}>
-        <ScrollLink className="navigation__link" to="tours">
+        <ScrollLink
+          className="navigation__link"
+          to="tours"
+          onSetActive={handleMobileNavItemClick}
+        >
           Tours
         </ScrollLink>
       </li>
       <li className={`${navClassName}__menu-item`}>
-        <ScrollLink className="navigation__link" to="about">
+        <ScrollLink
+          className="navigation__link"
+          to="about"
+          onSetActive={handleMobileNavItemClick}
+        >
           About
         </ScrollLink>
       </li>
       <li className={`${navClassName}__menu-item`}>
-        <ScrollLink className="navigation__link" to="reviews">
+        <ScrollLink
+          className="navigation__link"
+          to="reviews"
+          onSetActive={handleMobileNavItemClick}
+        >
           Reviews
         </ScrollLink>
       </li>
       <li className={`${navClassName}__menu-item`}>
-        <ScrollLink className="navigation__link" to="contact">
+        <ScrollLink
+          className="navigation__link"
+          to="contact"
+          onSetActive={handleMobileNavItemClick}
+        >
           Contact
         </ScrollLink>
       </li>
@@ -68,6 +91,7 @@ const NaviagtionMenu = ({ navClassName }) => {
 
 NaviagtionMenu.propTypes = {
   navClassName: PropTypes.string.isRequired,
+  handleMobileNavItemClick: PropTypes.func,
 };
 
 export default NaviagtionMenu;

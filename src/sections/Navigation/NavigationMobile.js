@@ -30,7 +30,10 @@ const NavigationMobile = () => {
         </button>
       </header>
       <div className="navigation-mobile__drawer">
-        <NavigationMenu navClassName="navigation-mobile" />
+        <NavigationMenu
+          handleMobileNavItemClick={() => setOpen(false)}
+          navClassName="navigation-mobile"
+        />
       </div>
     </div>
   );
