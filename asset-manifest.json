@@ -1,0 +1,40 @@
+{
+  "files": {
+    "main.css": "/livour-web/static/css/main.6ceb2c39.chunk.css",
+    "main.js": "/livour-web/static/js/main.90b5b43b.chunk.js",
+    "main.js.map": "/livour-web/static/js/main.90b5b43b.chunk.js.map",
+    "runtime-main.js": "/livour-web/static/js/runtime-main.72ec591d.js",
+    "runtime-main.js.map": "/livour-web/static/js/runtime-main.72ec591d.js.map",
+    "static/js/2.669f4e6f.chunk.js": "/livour-web/static/js/2.669f4e6f.chunk.js",
+    "static/js/2.669f4e6f.chunk.js.map": "/livour-web/static/js/2.669f4e6f.chunk.js.map",
+    "index.html": "/livour-web/index.html",
+    "precache-manifest.673832107d37477de225e3086f1a6370.js": "/livour-web/precache-manifest.673832107d37477de225e3086f1a6370.js",
+    "service-worker.js": "/livour-web/service-worker.js",
+    "static/css/main.6ceb2c39.chunk.css.map": "/livour-web/static/css/main.6ceb2c39.chunk.css.map",
+    "static/js/2.669f4e6f.chunk.js.LICENSE.txt": "/livour-web/static/js/2.669f4e6f.chunk.js.LICENSE.txt",
+    "static/media/about-us.jpg": "/livour-web/static/media/about-us.75ed9e8d.jpg",
+    "static/media/airplane.svg": "/livour-web/static/media/airplane.073fc89e.svg",
+    "static/media/beach.svg": "/livour-web/static/media/beach.3af9b563.svg",
+    "static/media/cambodia.jpg": "/livour-web/static/media/cambodia.b7715211.jpg",
+    "static/media/facebook-white.svg": "/livour-web/static/media/facebook-white.35fd0fcb.svg",
+    "static/media/facebook.svg": "/livour-web/static/media/facebook.eb3589ec.svg",
+    "static/media/hot-air-balloon.svg": "/livour-web/static/media/hot-air-balloon.ae6506ac.svg",
+    "static/media/instagram-white.svg": "/livour-web/static/media/instagram-white.f4ee0e0c.svg",
+    "static/media/instagram.svg": "/livour-web/static/media/instagram.b94f114e.svg",
+    "static/media/left-arrow.svg": "/livour-web/static/media/left-arrow.a9be969a.svg",
+    "static/media/MainBanner.scss": "/livour-web/static/media/main-banner.65266eb4.jpg",
+    "static/media/nepal.jpg": "/livour-web/static/media/nepal.f71a9111.jpg",
+    "static/media/Reviews.scss": "/livour-web/static/media/reviews-background.c7c0ce60.jpg",
+    "static/media/right-arrow.svg": "/livour-web/static/media/right-arrow.67975f6c.svg",
+    "static/media/sri-lanca.jpg": "/livour-web/static/media/sri-lanca.aa6ff536.jpg",
+    "static/media/tourist.svg": "/livour-web/static/media/tourist.71b402d1.svg",
+    "static/media/tripadvisor-white.svg": "/livour-web/static/media/tripadvisor-white.e415578f.svg",
+    "static/media/youtube-white.svg": "/livour-web/static/media/youtube-white.4efd9a10.svg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.72ec591d.js",
+    "static/js/2.669f4e6f.chunk.js",
+    "static/css/main.6ceb2c39.chunk.css",
+    "static/js/main.90b5b43b.chunk.js"
+  ]
+}
