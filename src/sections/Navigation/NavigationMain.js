@@ -1,6 +1,6 @@
 import React from 'react';
 import NavigationMenu from './NavigationMenu';
-import useVisibilityOnScroll from './useVisibilityOnScroll';
+import useVisibilityOnScroll from '../../effects/useVisibilityOnScroll';
 import './Navigation.scss';
 
 const NavigationMain = () => {

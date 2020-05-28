@@ -1,0 +1,33 @@
+@import '../../styles/variables';
+
+.backtotop-button {
+  opacity: 0;
+  pointer-events: none;
+  position: fixed;
+  bottom: $space-xlarge;
+  right: $space-xlarge;
+  width: 5rem;
+  height: 5rem;
+  z-index: 1;
+  background-color: $color-primary;
+  box-shadow: 0 0 1rem 0.05rem rgb(0, 0, 0);
+  border-radius: 50%;
+  border: none;
+  transition: $transition-time-primary opacity,
+    $transition-time-primary background-color;
+
+  &:hover {
+    background-color: $color-primary-light;
+    cursor: pointer;
+  }
+
+  &__icon {
+    width: 80%;
+    height: 80%;
+  }
+
+  &--visible {
+    opacity: 1;
+    pointer-events: unset;
+  }
+}

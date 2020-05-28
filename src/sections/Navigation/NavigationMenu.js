@@ -1,6 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import ScrollLink from '../../components/ScrollLink';
+import ScrollLink from '../../components/ScrollLink/ScrollLink';
 import FacebookIcon from '../../images/facebook.svg';
 import InstagramIcon from '../../images/instagram.svg';
 

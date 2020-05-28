@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import useVisibilityOnScroll from './useVisibilityOnScroll';
+import useVisibilityOnScroll from '../../effects/useVisibilityOnScroll';
 import NavigationMenu from './NavigationMenu';
 import './Navigation.scss';
 import './Hamburger.scss';

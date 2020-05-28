@@ -1,5 +1,5 @@
 import React from 'react';
-import ScrollLink from '../../components/ScrollLink';
+import ScrollLink from '../../components/ScrollLink/ScrollLink';
 
 const ToursItem = ({ tour }) => {
   return (
