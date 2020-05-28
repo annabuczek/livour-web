@@ -1,17 +1,17 @@
 {
   "files": {
-    "main.css": "/livour-web/static/css/main.9b8f9569.chunk.css",
-    "main.js": "/livour-web/static/js/main.66dc31c9.chunk.js",
-    "main.js.map": "/livour-web/static/js/main.66dc31c9.chunk.js.map",
+    "main.css": "/livour-web/static/css/main.8724d481.chunk.css",
+    "main.js": "/livour-web/static/js/main.eba58931.chunk.js",
+    "main.js.map": "/livour-web/static/js/main.eba58931.chunk.js.map",
     "runtime-main.js": "/livour-web/static/js/runtime-main.72ec591d.js",
     "runtime-main.js.map": "/livour-web/static/js/runtime-main.72ec591d.js.map",
-    "static/js/2.4615cb0b.chunk.js": "/livour-web/static/js/2.4615cb0b.chunk.js",
-    "static/js/2.4615cb0b.chunk.js.map": "/livour-web/static/js/2.4615cb0b.chunk.js.map",
+    "static/js/2.60ddc641.chunk.js": "/livour-web/static/js/2.60ddc641.chunk.js",
+    "static/js/2.60ddc641.chunk.js.map": "/livour-web/static/js/2.60ddc641.chunk.js.map",
     "index.html": "/livour-web/index.html",
-    "precache-manifest.b998dd9e0971b7fd8d8fbb483e5a8bb3.js": "/livour-web/precache-manifest.b998dd9e0971b7fd8d8fbb483e5a8bb3.js",
+    "precache-manifest.2ea243e824872074f980503430d651d1.js": "/livour-web/precache-manifest.2ea243e824872074f980503430d651d1.js",
     "service-worker.js": "/livour-web/service-worker.js",
-    "static/css/main.9b8f9569.chunk.css.map": "/livour-web/static/css/main.9b8f9569.chunk.css.map",
-    "static/js/2.4615cb0b.chunk.js.LICENSE.txt": "/livour-web/static/js/2.4615cb0b.chunk.js.LICENSE.txt",
+    "static/css/main.8724d481.chunk.css.map": "/livour-web/static/css/main.8724d481.chunk.css.map",
+    "static/js/2.60ddc641.chunk.js.LICENSE.txt": "/livour-web/static/js/2.60ddc641.chunk.js.LICENSE.txt",
     "static/media/about-us.jpg": "/livour-web/static/media/about-us.75ed9e8d.jpg",
     "static/media/airplane.svg": "/livour-web/static/media/airplane.073fc89e.svg",
     "static/media/beach.svg": "/livour-web/static/media/beach.3af9b563.svg",
@@ -29,12 +29,13 @@
     "static/media/sri-lanca.jpg": "/livour-web/static/media/sri-lanca.aa6ff536.jpg",
     "static/media/tourist.svg": "/livour-web/static/media/tourist.71b402d1.svg",
     "static/media/tripadvisor-white.svg": "/livour-web/static/media/tripadvisor-white.e415578f.svg",
+    "static/media/up-arrow.svg": "/livour-web/static/media/up-arrow.888e05b5.svg",
     "static/media/youtube-white.svg": "/livour-web/static/media/youtube-white.4efd9a10.svg"
   },
   "entrypoints": [
     "static/js/runtime-main.72ec591d.js",
-    "static/js/2.4615cb0b.chunk.js",
-    "static/css/main.9b8f9569.chunk.css",
-    "static/js/main.66dc31c9.chunk.js"
+    "static/js/2.60ddc641.chunk.js",
+    "static/css/main.8724d481.chunk.css",
+    "static/js/main.eba58931.chunk.js"
   ]
 }

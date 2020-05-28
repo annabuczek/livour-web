@@ -1,23 +1,23 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "9f9da450ca2b12ceca747636ff2030b5",
+    "revision": "4499f11729fa27244629d4595fb2334c",
     "url": "/livour-web/index.html"
   },
   {
-    "revision": "2ca27d30b9e00258d580",
-    "url": "/livour-web/static/css/main.9b8f9569.chunk.css"
+    "revision": "f386494b02204cc72046",
+    "url": "/livour-web/static/css/main.8724d481.chunk.css"
   },
   {
-    "revision": "8322e326f9d40ff66b5e",
-    "url": "/livour-web/static/js/2.4615cb0b.chunk.js"
+    "revision": "acbdc8c2cf88ca0aa228",
+    "url": "/livour-web/static/js/2.60ddc641.chunk.js"
   },
   {
     "revision": "e88a3e95b5364d46e95b35ae8c0dc27d",
-    "url": "/livour-web/static/js/2.4615cb0b.chunk.js.LICENSE.txt"
+    "url": "/livour-web/static/js/2.60ddc641.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "2ca27d30b9e00258d580",
-    "url": "/livour-web/static/js/main.66dc31c9.chunk.js"
+    "revision": "f386494b02204cc72046",
+    "url": "/livour-web/static/js/main.eba58931.chunk.js"
   },
   {
     "revision": "5dbfb70fc7c6abfa8bcc",
@@ -90,6 +90,10 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
     "revision": "e415578fd5a006fbe0acc232daa7dcde",
     "url": "/livour-web/static/media/tripadvisor-white.e415578f.svg"
+  },
+  {
+    "revision": "888e05b5bc054a16cbb01deea854ab4d",
+    "url": "/livour-web/static/media/up-arrow.888e05b5.svg"
   },
   {
     "revision": "4efd9a10cce45c09df0a548006e86d9b",
