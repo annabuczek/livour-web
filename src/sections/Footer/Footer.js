@@ -109,6 +109,113 @@ const Footer = () => {
         <p className="footer__copyrights">
           Copyright © 2020 Anna Buczek
         </p>
+        <div className="footer__copyrights">
+          Icons made by{' '}
+          <a
+            className="footer__copyrights-link"
+            href="https://www.flaticon.com/authors/roundicons"
+            target="_blank"
+            rel="noreferrer noopener"
+            title="Roundicons"
+          >
+            <strong>Roundicons</strong>
+          </a>
+          {', '}
+          <a
+            className="footer__copyrights-link"
+            href="https://www.flaticon.com/authors/eucalyp"
+            target="_blank"
+            rel="noreferrer noopener"
+            title="Eucalyp"
+          >
+            <strong>Eucalyp</strong>
+          </a>
+          {', '}
+          <a
+            className="footer__copyrights-link"
+            href="https://www.flaticon.com/authors/freepik"
+            target="_blank"
+            rel="noreferrer noopener"
+            title="Freepik"
+          >
+            <strong>Freepik</strong>
+          </a>{' '}
+          from{' '}
+          <a
+            className="footer__copyrights-link"
+            href="https://www.flaticon.com/"
+            target="_blank"
+            rel="noreferrer noopener"
+            title="Flaticon"
+          >
+            <strong>www.flaticon.com</strong>
+          </a>
+        </div>
+        <div className="footer__copyrights">
+          Photos by{' '}
+          <a
+            href="https://unsplash.com/@paulgilmore_?utm_source=github.com/annabuczek&utm_medium=referral"
+            target="_blank"
+            rel="noreferrer noopener"
+            className="footer__copyrights-link"
+          >
+            <strong>Paul Gilmore</strong>
+          </a>{' '}
+          {', '}
+          <a
+            href="https://unsplash.com/@koalamoose?utm_source=github.com/annabuczek&utm_medium=referral"
+            target="_blank"
+            rel="noreferrer noopener"
+            className="footer__copyrights-link"
+          >
+            <strong>Agnieszka Kowalczyk</strong>
+          </a>{' '}
+          {', '}
+          <a
+            href="https://unsplash.com/@sebaspenalambarri?utm_source=github.com/annabuczek&utm_medium=referral"
+            target="_blank"
+            rel="noreferrer noopener"
+            className="footer__copyrights-link"
+          >
+            <strong>Sebastian Pena Lambarri</strong>
+          </a>{' '}
+          {', '}
+          <a
+            href="https://unsplash.com/@colt10jordan?utm_source=github.com/annabuczek&utm_medium=referral"
+            target="_blank"
+            rel="noreferrer noopener"
+            className="footer__copyrights-link"
+          >
+            <strong>Colton Jones</strong>
+          </a>{' '}
+          {', '}
+          <a
+            href="https://unsplash.com/@averieclaire?utm_source=github.com/annabuczek&utm_medium=referral"
+            target="_blank"
+            rel="noreferrer noopener"
+            className="footer__copyrights-link"
+          >
+            <strong>averie woodard</strong>
+          </a>{' '}
+          {', '}
+          <a
+            href="https://unsplash.com/@lucabravo?utm_source=github.com/annabuczek&utm_medium=referral"
+            target="_blank"
+            rel="noreferrer noopener"
+            className="footer__copyrights-link"
+          >
+            <strong>Luca Bravo</strong>
+          </a>{' '}
+          on{' '}
+          <a
+            href="https://unsplash.com/?utm_source=github.com/annabuczek&utm_medium=referral"
+            target="_blank"
+            rel="noreferrer noopener"
+            className="footer__copyrights-link"
+          >
+            <strong>Unsplash</strong>
+          </a>
+        </div>
       </div>
     </section>
   );

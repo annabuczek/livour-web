@@ -3,7 +3,7 @@
 
 .footer {
   width: 100%;
-  padding: 8rem 0 0 0;
+  padding: 8rem 0 $space-small 0;
   color: $color-text-white;
   background-color: $color-primary-dark;
 
@@ -91,5 +91,12 @@
 
   &__copyrights {
     font-size: 1.2rem;
+
+    &-link {
+      color: $color-text-white;
+      &:hover {
+        color: $color-primary;
+      }
+    }
   }
 }
